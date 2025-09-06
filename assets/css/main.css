@@ -670,7 +670,7 @@ h6 {
 }
 
 .page-title .heading {
-  padding: 80px 0;
+  padding: 20px 0;
 }
 
 .page-title .heading h1 {
@@ -5331,7 +5331,9 @@ section,
 .contact {
   overflow: hidden;
 }
-
+.contact .section {
+  padding: 0px !important;
+}
 .contact .info-box {
   color: var(--default-color);
   background: var(--surface-color);

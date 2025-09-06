@@ -45,22 +45,22 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Medi<span>Nest</span></h1>
+        <h1 class="sitename">Centro<span>Medico</span></h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="#home-about">Sobre Nosotros</a></li>
           
-          <li><a href="services.html">Servicios</a></li>
+          <li><a href="#featured-services">Servicios</a></li>
 
           <!--
             <li><a href="departments.html">Departamentos</a></li>
             <li><a href="doctors.html">Doctores</a></li>
           -->
           
-          <li><a href="contact.html">Contactanos</a></li>
+          <li><a href="#contact">Contactanos</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -252,8 +252,8 @@
               </div>
 
               <div class="action-buttons">
-                <a href="about.html" class="btn-explore">Explorar nuestros servicios</a>
-                <a href="contact.html" class="btn-contact">
+                <a href="#featured-services" class="btn-explore">Explorar nuestros servicios</a>
+                <a href="#" class="btn-contact">
                   <i class="bi bi-telephone"></i>
                   Solicitar un turno
                 </a>
@@ -396,7 +396,7 @@ Nuestro equipo médico está comprometido con ofrecer una atención personalizad
 
                 <div class="action-buttons">
                   <a href="appointment.html" class="primary-btn">Solicitar un turno</a>
-                  <a href="services.html" class="secondary-link">
+                  <a href="#featured-services" class="secondary-link">
                     <span>Conocer nuestros servicios</span>
                     <i class="fas fa-arrow-right"></i>
                   </a>
@@ -478,31 +478,75 @@ Nuestro equipo médico está comprometido con ofrecer una atención personalizad
 
           </div>
         </div>
-
-        <div class="contact-banner" data-aos="zoom-in" data-aos-delay="600">
-          <div class="banner-content">
-            <div class="contact-info">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="contact-text">
-                <h5>¿Necesitás asistencia inmediata?</h5>
-                <p>Nuestro equipo médico está disponible las 24 horas para consultas urgentes y soporte en emergencias.</p>
-              </div>
-            </div>
-            <div class="contact-actions">
-              <a href="tel:+15551234567" class="call-btn">
-                <i class="fas fa-phone"></i>
-                (261) 456-7890
-              </a>
-              <a href="contact.html" class="contact-link">Cómo llegar</a>
-            </div>
-          </div>
-        </div>
-
       </div>
 
     </section><!-- /Call To Action Section -->
+
+    <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="heading-title">Contactanos</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row gy-4 mt-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.4770376449556!2d-117.39905292424607!3d33.978802323820714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb1f5d8fb6c75%3A0xd9d73340c90a71c6!2s4582%20Magnolia%20Ave%2C%20Riverside%2C%20CA%2092506!5e0!3m2!1sen!2sus!4v1692395638095!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Tu Nombre" required="">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Tu Email" required="">
+                  </div>
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Asunto" required="">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="10" placeholder="Mensaje" required=""></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <button type="submit">Enviar Mensaje</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="social-links text-center mt-5" data-aos="zoom-in" data-aos-delay="700">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
+          </div>
+
+        </div>
+
+    </section><!-- /Contact Section -->
+
 
   </main>
 
@@ -512,7 +556,7 @@ Nuestro equipo médico está comprometido con ofrecer una atención personalizad
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">MediNest</span>
+            <span class="sitename">Centro Medico</span>
           </a>
           <div class="footer-contact pt-3">
             <p>San Martin Sur 1092</p>
@@ -575,7 +619,7 @@ Nuestro equipo médico está comprometido con ofrecer una atención personalizad
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong>MediNest</strong>&nbsp;<span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong>Centro Medico</strong>&nbsp;<span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
